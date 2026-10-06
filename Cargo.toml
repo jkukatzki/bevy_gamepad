@@ -1,11 +1,11 @@
 [workspace]
 
 [workspace.dependencies]
-bevy_app = "0.19"
-bevy_input = "0.19"
-bevy_ecs = "0.19"
-bevy_platform = "0.19"
-bevy_log = "0.19"
+bevy_app = "=0.20.0-rc.2"
+bevy_input = "=0.20.0-rc.2"
+bevy_ecs = "=0.20.0-rc.2"
+bevy_platform = "=0.20.0-rc.2"
+bevy_log = "=0.20.0-rc.2"
 
 [package]
 name = "bevy_gamepad"
@@ -31,27 +31,32 @@ bevy_log.workspace = true
 thiserror = "2.0.12"
 
 [dev-dependencies]
-bevy = { version = "0.19", default-features = false, features = [
+bevy = { version = "=0.20.0-rc.2", default-features = false, features = [
     "android-game-activity",
-    "android_shared_stdcxx",
-    "animation",
+    "bevy_animation",
+    "gltf_animation",
+    "std",
+    "async_executor",
+    "bevy_sprite_render",
+    "bevy_ui_render",
+    "bevy_gizmos_render",
     "bevy_asset",
     "bevy_audio",
     "bevy_color",
     "bevy_core_pipeline",
     "bevy_gizmos",
     "bevy_gltf",
-    "bevy_mesh_picking_backend",
+    "mesh_picking",
     "bevy_pbr",
     "bevy_picking",
     "bevy_render",
     "bevy_scene",
     "bevy_sprite",
-    "bevy_sprite_picking_backend",
+    "sprite_picking",
     "bevy_state",
     "bevy_text",
     "bevy_ui",
-    "bevy_ui_picking_backend",
+    "ui_picking",
     "bevy_window",
     "bevy_winit",
     "custom_cursor",
@@ -62,6 +67,7 @@ bevy = { version = "0.19", default-features = false, features = [
     "smaa_luts",
     "sysinfo_plugin",
     "tonemapping_luts",
+    "zstd_rust",
     "vorbis",
     "webgl2",
     "x11",
