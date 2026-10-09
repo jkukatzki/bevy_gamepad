@@ -1,11 +1,11 @@
 [workspace]
 
 [workspace.dependencies]
-bevy_app = "=0.20.0-rc.2"
-bevy_input = "=0.20.0-rc.2"
-bevy_ecs = "=0.20.0-rc.2"
-bevy_platform = "=0.20.0-rc.2"
-bevy_log = "=0.20.0-rc.2"
+bevy_app = "=0.20.0"
+bevy_input = "=0.20.0"
+bevy_ecs = "=0.20.0"
+bevy_platform = "=0.20.0"
+bevy_log = "=0.20.0"
 
 [package]
 name = "bevy_gamepad"
@@ -31,7 +31,7 @@ bevy_log.workspace = true
 thiserror = "2.0.12"
 
 [dev-dependencies]
-bevy = { version = "=0.20.0-rc.2", default-features = false, features = [
+bevy = { version = "=0.20.0", default-features = false, features = [
     "android-game-activity",
     "bevy_animation",
     "gltf_animation",
